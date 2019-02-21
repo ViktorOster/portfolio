@@ -205,7 +205,7 @@ class Portfolio extends Component {
                             tags={["JavaScript", "ReactJS", "HTML5", "CSS3"]}
                             image={portfolioImg}
                             projectLink="/"
-                            codeLink="https://github.com/ViktorOster/portfolio"
+                            codeLink="https://github.com/ViktorOster/portfolio/tree/master"
                         />
                     </div>
 
