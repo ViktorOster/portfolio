@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/MedicalDashboard.140e553e.png"
   },
   {
-    "revision": "1a9493bc14b89d85f9af",
+    "revision": "5516387bfd3aa32f430a",
     "url": "/portfolio/static/css/main.777c4650.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/SPMS.4691e045.png"
   },
   {
-    "revision": "1a9493bc14b89d85f9af",
-    "url": "/portfolio/static/js/main.1a9493bc.chunk.js"
+    "revision": "5516387bfd3aa32f430a",
+    "url": "/portfolio/static/js/main.5516387b.chunk.js"
   },
   {
     "revision": "0893ba4ff72bd36a4f1f7962666e7e17",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Jag.694bfb3d.jpg"
   },
   {
-    "revision": "d8572d8b4a00ce752f6d81c2fb30c3f9",
+    "revision": "e48aa64191f1591a7f677bb73a9607a8",
     "url": "/portfolio/index.html"
   }
 ];
