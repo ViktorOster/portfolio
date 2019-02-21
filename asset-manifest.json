@@ -1,0 +1,21 @@
+{
+  "main.css": "/portfolio/static/css/main.777c4650.chunk.css",
+  "main.js": "/portfolio/static/js/main.1a9493bc.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.1a9493bc.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.0fad4c0f.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.0fad4c0f.js.map",
+  "static/js/2.c0601c14.chunk.js": "/portfolio/static/js/2.c0601c14.chunk.js",
+  "static/js/2.c0601c14.chunk.js.map": "/portfolio/static/js/2.c0601c14.chunk.js.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.282be326e1fa79a719d54eba585ac162.js": "/portfolio/precache-manifest.282be326e1fa79a719d54eba585ac162.js",
+  "service-worker.js": "/portfolio/service-worker.js",
+  "static/css/main.777c4650.chunk.css.map": "/portfolio/static/css/main.777c4650.chunk.css.map",
+  "static/media/DrawWaveSynth.png": "/portfolio/static/media/DrawWaveSynth.9f2486bd.png",
+  "static/media/Jag.jpg": "/portfolio/static/media/Jag.694bfb3d.jpg",
+  "static/media/MedicalDashboard.png": "/portfolio/static/media/MedicalDashboard.140e553e.png",
+  "static/media/PortfolioPage.png": "/portfolio/static/media/PortfolioPage.e77259b9.png",
+  "static/media/SPMS.png": "/portfolio/static/media/SPMS.4691e045.png",
+  "static/media/SketchBoardgallery.png": "/portfolio/static/media/SketchBoardgallery.8c11839c.png",
+  "static/media/eAuctionDjango.png": "/portfolio/static/media/eAuctionDjango.0893ba4f.png",
+  "static/media/hero-image-transparent.png": "/portfolio/static/media/hero-image-transparent.c586a0fe.png"
+}
