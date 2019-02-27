@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import Card from "./card";
 import { Link, animateScroll as scroll } from "react-scroll";
 import heroImg from '../images/hero-image-transparent.png';
+import heroImg2 from '../images/irvan-smith-563895-unsplash.jpg';
+import heroImg3 from '../images/florian-olivo-1169465-unsplash.jpg';
+import heroImg4 from '../images/oscar-nord-588057-unsplash.jpg';
+import aboutImg from '../images/nhu-nguyen-785023-unsplash.jpg';
 import SPMSImg from '../images/SPMS.png';
 import dashboardImg from '../images/MedicalDashboard.png';
 import eAuctionImg from '../images/eAuctionDjango.png';
 import drawWaveImg from '../images/DrawWaveSynth.png';
 import sketchboardImg from '../images/SketchBoardgallery.png';
-import portfolioImg from '../images/PortfolioPage.png';
+import portfolioImg from '../images/portfolio-screenshot.jpg';
 import placeholderProfile from '../images/placeholder-profile.png';
 import profileImg from '../images/Jag.jpg';
 import downArrow from '../images/172458-128.png';
@@ -20,6 +24,18 @@ class Portfolio extends Component {
             formName: "",
             formEmail: "",
             formMessage: ""
+        }
+        window.onload = function () {
+            const myNav = document.getElementById("navbar");
+
+            window.onscroll = function () {
+                "use strict";
+                if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+                    myNav.classList.add("scroll");
+                } else {
+                    myNav.classList.remove("scroll");
+                }
+            };
         }
     }
     render() {
@@ -91,11 +107,16 @@ class Portfolio extends Component {
                 </div>
 
                 <section id="home">
-                    <img id="hero-img" src={heroImg} alt="" />
+                    <img id="hero-img-cover" src={heroImg4} alt="" />
                     <div className="hero-section">
                         <div className="hero-text">
-                            <h1>Hi, I'm Viktor,</h1>
-                            <h3>web developer</h3>
+                            <h1>Viktor Österholm</h1>
+                            <h3>Developer, Web developer</h3>
+                            <p id="hero-sub-text" >
+                                I love making things for the web.
+                                <br />
+                                Check out some of my projects below.
+                            </p>
                             <Link
                                 activeClass="active"
                                 to="projects"
@@ -104,7 +125,7 @@ class Portfolio extends Component {
                                 offset={-70}
                                 duration={500}
                             >
-                                <button>View Projects</button>
+                                <button >View Projects</button>
                             </Link>
                         </div>
 
@@ -126,15 +147,19 @@ class Portfolio extends Component {
                 </section>
 
                 <section id="about">
-                    <div className="center-text" id="about-title">
+                    <img className="background-img" id="about-img" src={aboutImg} alt="" />
+                    <div className="header-stylish" id="about-title">
                         <h2>About Me</h2>
                     </div>
                     <div id="profile-img-container">
                         <img src={profileImg} alt="" />
                     </div>
                     <p id="about-text">
-                        I’m a student with a passion for programming and web development. My interest in web development began when I took a university course on Web Services. Since then I’ve been constantly learning and developing web pages and -applications on my own. I received my Bachelor’s degree in Computer Science from Åbo Akademi university in Turku, Finland at the beginning of 2019. During my freetime as a student I’ve also developed games using Java and C# in Unity. When I’m not coding or designing web pages/apps I’m usually writing or playing music on my own or in bands.
-                        I love learning new technologies and making stuff for the web.
+                        I have a passion for development and web development in particular.
+                        I love creating applications in a variety of programming languages.
+                        Apart from programming i also enjoy creating great user experiences and good looking designs – I just love making stuff.
+                        <br />
+                        I’m always learning and striving to be the best that I can be.
                     </p>
                     <div className="down-arrow">
                         <Link
@@ -145,16 +170,19 @@ class Portfolio extends Component {
                             offset={-70}
                             duration={500}
                         >
-                            <div className="down-arrow">
+                            <div className="down-arrow" id="about-arrow">
                                 <img src={downArrow} alt="" />
                             </div>
 
                         </Link>
                     </div>
+
+
                 </section>
 
+
                 <section id="projects">
-                    <div className="center-text sub-header">
+                    <div className="sub-header header-stylish">
                         <h3>My Projects</h3>
                     </div>
 
@@ -169,7 +197,7 @@ class Portfolio extends Component {
                         />
                         <Card
                             title="Medical Dashboard"
-                            text="A patient dashboard for a medical company made with PHP and Laravel. Users can register and login and view their healthcare-related data as well as fill in questionnaires. Data is stored in SQL database. Use email: mike@mail.com, password: password to login and view data."
+                            text="A patient dashboard for a medical company made with PHP and Laravel. Users can register or login to view their healthcare related data and fill in questionnaires. Data is stored in an SQL database. Use email: mike@mail.com, password: password to login and view data."
                             tags={["PHP", "Laravel", "HTML5", "CSS3", "MySQL"]}
                             image={dashboardImg}
                             projectLink="https://medical-dashboard.herokuapp.com/"
@@ -177,7 +205,7 @@ class Portfolio extends Component {
                         />
                         <Card
                             title="Wave Drawing Synth"
-                            text="A synth based on user drawn wave shapes, made with the Web Audio API. Points can be added to a canvas to create custom wave shapes that then can be played using the keyboard or touch controls on mobile. Tested to be working with the Chrome browser on desktop and mobile."
+                            text="A synth based on user drawn wave shapes, made with the Web Audio API. Points can be added to a canvas to create custom wave shapes that can be played using the keyboard or touch controls on mobile. Tested to be working with the Chrome browser on desktop and mobile."
                             tags={["JavaScript", "HTML5", "CSS3"]}
                             image={drawWaveImg}
                             projectLink="https://viktoroster.github.io/draw-waveshape/"
@@ -193,15 +221,15 @@ class Portfolio extends Component {
                         />
                         <Card
                             title="E-Auction Site"
-                            text="An E-Auction site built with Python and Django. Has many functionalities. I still have to figure out how to deploy a Django site to heroku, so sadly no live version is available."
+                            text="An E-Auction site built with Python and Django. Has many functionalities. Not deployed yet, so no live version is available."
                             tags={["Python", "Django", "HTML5", "CSS3", "SQLite3"]}
                             image={eAuctionImg}
                             projectLink="/"
                             codeLink="https://github.com/ViktorOster/auction-django"
                         />
                         <Card
-                            title="This Page!"
-                            text="This page was made possible with the awesome powers of ReactJS"
+                            title="This Site!"
+                            text="This site was built using ReactJS."
                             tags={["JavaScript", "ReactJS", "HTML5", "CSS3"]}
                             image={portfolioImg}
                             projectLink="/"
@@ -209,29 +237,29 @@ class Portfolio extends Component {
                         />
                     </div>
 
-                    <div className="down-arrow">
-                        <Link
-                            activeClass="active"
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div className="down-arrow">
-                                <img src={downArrow} alt="" />
-                            </div>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className="down-arrow" id="projects-arrow">
+                            <img src={downArrow} alt="" />
+                        </div>
 
-                        </Link>
-                    </div>
+                    </Link>
 
                 </section>
 
                 <section id="contact">
-                    <div className="center-text sub-header" id="contact-header">
+                    <div className="sub-header header-stylish" id="contact-header">
                         <h3>Contact</h3>
-                        <p>If you wanna contact me, send me a mail at <span className="bold">osterholmv@gmail.com</span>,</p>
-                        <p>or fill in the form below</p>
+                    </div>
+                    <div id="contact-header-text">
+                        <p>If you want to contact me, send me an email at <span className="bold">osterholmv@gmail.com</span>,</p>
+                        <p>or fill in the form below.</p>
                     </div>
                     <div id="contact-form">
                         {/* <form onSubmit={this.handleSubmit.bind(this)}> */}
@@ -252,7 +280,7 @@ class Portfolio extends Component {
                             </label>
 
 
-                            <input id="contact-form-submit" type="submit" value="Send!" />
+                            <input id="contact-form-submit" type="submit" value="Send" />
                         </form>
                     </div>
 
@@ -275,6 +303,7 @@ class Portfolio extends Component {
 
         console.log("submit");
     }
+
 }
 
 export default Portfolio;
