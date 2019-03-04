@@ -7,7 +7,8 @@ class Card extends Component {
 
         this.state = {
             isMouseOver: false,
-            isMouseOverInfoIcon: false
+            isMouseOverInfoIcon: false,
+            isDownloading: false
         }
     }
 
@@ -17,6 +18,8 @@ class Card extends Component {
         let cardTextClass = this.state.isMouseOverInfoIcon ? " show" : "";
         let cardTagClass = this.state.isMouseOverInfoIcon ? " hide" :
             this.state.isMouseOver ? " show" : "";
+        let downloadStateClass = this.state.isDownloading ? " downloading" : "";
+        let downloadButtonText = this.state.isDownloading ? "Wait..." : "Download";
 
         return (
             <div className="card-container">
@@ -37,14 +40,28 @@ class Card extends Component {
                         })}
                     </div>
                     <div className="card-buttons">
-                        <button className={"card-button-project" + cardClass}><a href={this.props.projectLink} target="_blank">View Project</a></button>
-                        <button className={"card-button-code" + cardClass}><a href={this.props.codeLink} target="_blank">View Code</a></button>
+                        {
+                            this.props.availability === "unavailable" ? "" :
+                                (this.props.availability === "hosted" || this.props.availability === "noCode") ?
+                                    <button className={"card-button-project" + cardClass}><a href={this.props.projectLink} target="_blank" rel="noopener noreferrer">View Project</a></button>
+                                    : <button className={"card-button-project" + cardClass + downloadStateClass} onClick={this.handleDownloadState.bind(this)}><a href={this.props.projectLink} target="_parent">{downloadButtonText}</a></button>
+                        }
+
+                        {
+                            this.props.availability === "noCode" ? "" : <button className={"card-button-code" + cardClass}><a href={this.props.codeLink} target="_blank" rel="noopener noreferrer">View Code</a></button>
+                        }
                     </div>
 
                 </div>
             </div>
 
         );
+    }
+    handleDownloadState() {
+        this.setState({ isDownloading: true });
+        setTimeout(() => {
+            this.setState({ isDownloading: false })
+        }, 5500);
     }
     handleCardMouseEnter() {
         this.setState({ isMouseOver: true });
