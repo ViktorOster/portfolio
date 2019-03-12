@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/portfolio-screenshot.51d589c7.jpg"
   },
   {
-    "revision": "441210c5b11e0f4449c3",
+    "revision": "1e114d68038b1735a614",
     "url": "/portfolio/static/css/main.f4e9636c.chunk.css"
   },
   {
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/SketchBoardgallery.8c11839c.png"
   },
   {
-    "revision": "44d93cdd00917c59488b97023ee70d78",
-    "url": "/portfolio/static/media/videoGalleryScreenshot.44d93cdd.png"
+    "revision": "d3c557a15f8d09cfa75a83819eaaa98e",
+    "url": "/portfolio/static/media/videoGalleryScreenshot.d3c557a1.png"
   },
   {
-    "revision": "441210c5b11e0f4449c3",
-    "url": "/portfolio/static/js/main.441210c5.chunk.js"
+    "revision": "1e114d68038b1735a614",
+    "url": "/portfolio/static/js/main.1e114d68.chunk.js"
   },
   {
     "revision": "cdae8fa8e7676b9f3fb2eacf49c3ff37",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/florian-olivo-1169465-unsplash.b4e68b99.jpg"
   },
   {
-    "revision": "3d1d06bbd7569213347eae8eb9511b80",
+    "revision": "5bcebb0e441782f22193adad8ede2f2b",
     "url": "/portfolio/index.html"
   }
 ];

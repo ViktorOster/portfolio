@@ -1,13 +1,13 @@
 {
   "main.css": "/portfolio/static/css/main.f4e9636c.chunk.css",
-  "main.js": "/portfolio/static/js/main.441210c5.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.441210c5.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.1e114d68.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.1e114d68.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.0fad4c0f.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.0fad4c0f.js.map",
   "static/js/2.ef880720.chunk.js": "/portfolio/static/js/2.ef880720.chunk.js",
   "static/js/2.ef880720.chunk.js.map": "/portfolio/static/js/2.ef880720.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.737d6a700a6e3f3c6e79ee00cdf542df.js": "/portfolio/precache-manifest.737d6a700a6e3f3c6e79ee00cdf542df.js",
+  "precache-manifest.1138e57f7932fbb2d8c2c796b89080b7.js": "/portfolio/precache-manifest.1138e57f7932fbb2d8c2c796b89080b7.js",
   "service-worker.js": "/portfolio/service-worker.js",
   "static/css/main.f4e9636c.chunk.css.map": "/portfolio/static/css/main.f4e9636c.chunk.css.map",
   "static/media/DrawWaveSynth.png": "/portfolio/static/media/DrawWaveSynth.9f2486bd.png",
@@ -29,5 +29,5 @@
   "static/media/ninjaGameDemoScreenshot.png": "/portfolio/static/media/ninjaGameDemoScreenshot.f9be90df.png",
   "static/media/oscar-nord-588057-unsplash.jpg": "/portfolio/static/media/oscar-nord-588057-unsplash.6e4f96c9.jpg",
   "static/media/portfolio-screenshot.jpg": "/portfolio/static/media/portfolio-screenshot.51d589c7.jpg",
-  "static/media/videoGalleryScreenshot.png": "/portfolio/static/media/videoGalleryScreenshot.44d93cdd.png"
+  "static/media/videoGalleryScreenshot.png": "/portfolio/static/media/videoGalleryScreenshot.d3c557a1.png"
 }
