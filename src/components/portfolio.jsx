@@ -11,6 +11,7 @@ import dashboardImg from '../images/MedicalDashboard.png';
 import eAuctionImg from '../images/eAuctionDjango.png';
 import drawWaveImg from '../images/DrawWaveSynth.png';
 import sketchboardImg from '../images/SketchBoardgallery.png';
+import videoGalleryImg from '../images/videoGalleryScreenshot.png';
 import portfolioImg from '../images/portfolio-screenshot.jpg';
 import javaMinigolfImg from '../images/JavaMinigolf.png';
 import javaBreakoutImg from '../images/JavaBreakout.png';
@@ -52,6 +53,15 @@ const projects = {
             image={drawWaveImg}
             projectLink="https://viktoroster.github.io/draw-waveshape/"
             codeLink="https://github.com/ViktorOster/draw-waveshape"
+        />,
+        <Card
+            availability="hosted"
+            title="Video Gallery"
+            text="A video gallery made with React.js. Play videos in different categories"
+            tags={["JavaScript", "HTML5", "CSS3", "ReactJS"]}
+            image={drawWaveImg}
+            projectLink="https://viktoroster.github.io/video-gallery/"
+            codeLink="https://github.com/ViktorOster/video-gallery/tree/master"
         />,
         <Card
             availability="hosted"
