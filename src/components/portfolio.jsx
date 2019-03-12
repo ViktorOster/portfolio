@@ -59,7 +59,7 @@ const projects = {
             title="Video Gallery"
             text="A video gallery made with React.js. Play videos in different categories"
             tags={["JavaScript", "HTML5", "CSS3", "ReactJS"]}
-            image={drawWaveImg}
+            image={videoGalleryImg}
             projectLink="https://viktoroster.github.io/video-gallery/"
             codeLink="https://github.com/ViktorOster/video-gallery/tree/master"
         />,
