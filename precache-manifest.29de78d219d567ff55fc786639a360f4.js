@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/JavaMinigolf.cdae8fa8.png"
   },
   {
-    "revision": "1a9e4c368c85e14379e2",
+    "revision": "7660f84c83d9c725394d",
     "url": "/portfolio/static/css/main.f4e9636c.chunk.css"
   },
   {
@@ -12,8 +12,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.0fad4c0f.js"
   },
   {
-    "revision": "42fcdf697a1fe4dfe709",
-    "url": "/portfolio/static/js/2.42fcdf69.chunk.js"
+    "revision": "cc7013827244e5b6836e",
+    "url": "/portfolio/static/js/2.cc701382.chunk.js"
+  },
+  {
+    "revision": "9f2486bd0d69ea4a7e8d50236c1167b8",
+    "url": "/portfolio/static/media/DrawWaveSynth.9f2486bd.png"
   },
   {
     "revision": "6e4f96c99fef47d0202e8030f58b5afe",
@@ -36,10 +40,6 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/eAuctionDjango.0893ba4f.png"
   },
   {
-    "revision": "9f2486bd0d69ea4a7e8d50236c1167b8",
-    "url": "/portfolio/static/media/DrawWaveSynth.9f2486bd.png"
-  },
-  {
     "revision": "8c11839c8deda3a1453f7db2ac318665",
     "url": "/portfolio/static/media/SketchBoardgallery.8c11839c.png"
   },
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/portfolio-screenshot.51d589c7.jpg"
   },
   {
-    "revision": "1a9e4c368c85e14379e2",
-    "url": "/portfolio/static/js/main.1a9e4c36.chunk.js"
+    "revision": "7660f84c83d9c725394d",
+    "url": "/portfolio/static/js/main.7660f84c.chunk.js"
   },
   {
     "revision": "0176fc61a4b6fa0d046ec403bf71592b",
@@ -92,7 +92,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/florian-olivo-1169465-unsplash.b4e68b99.jpg"
   },
   {
-    "revision": "ca55d708871e9cce8651082cf83ea38d",
+    "revision": "44d93cdd00917c59488b97023ee70d78",
+    "url": "/portfolio/static/media/videoGalleryScreenshot.44d93cdd.png"
+  },
+  {
+    "revision": "cbb4361c1c3ce142936c5d0d277af9f6",
     "url": "/portfolio/index.html"
   }
 ];
