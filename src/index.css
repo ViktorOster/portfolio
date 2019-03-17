@@ -5,20 +5,12 @@ html, body {
     overflow-x: hidden;
 }
 #portfolio {
-    background: #424242;
-    background: #272D2D;
-    background: #1F0A03;
-    background: rgb(26, 5, 2);
     background: rgb(24, 10, 23);
     color:white;
 }
 
 /* global style */
 
-section {
-    /* border-bottom: 2px solid #999; */
-    /* min-height: 100vh; */
-}
 a {
     text-decoration: none;
     color: inherit;
@@ -27,7 +19,7 @@ button {
     border: 2px solid #444;
     color: #444;
     background: none;
-    border-radius: 30px;
+    border-radius: 0px;
     padding: 9px 11px;
     margin: 0 5px;
     font-weight: bold;
@@ -80,7 +72,7 @@ button {
 #navbar {
     width:100vw;
     display:grid;
-    grid-template-columns:  .5fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-columns:  15vw 1fr 1fr 1fr 15vw;
     text-align: center;
     height:65px;
     position: fixed;
@@ -94,7 +86,6 @@ button {
     font-size: 1em;
     cursor: pointer;
     display:flex;
-    text-align: left;
     justify-content: center;
     align-items: center;
     width:100%;
@@ -157,8 +148,8 @@ button {
     margin-top:10px;
     font-size: 0.55em;
     color: #4C9F70;
+    padding: 15px 30px;
     border:0.13em solid #4C9F70;
-    border-radius:30px;
 }
 .hero-text button:hover {
     color: #F6F8FF;
@@ -168,13 +159,14 @@ button {
     z-index: 2;
     font-size: 1em;
     /* background:#eee; */
-    margin-left: 10vw;
+    margin-left: 11vw;
 }
 .hero-text > h1 {
     color: #F6F8FF;
 }
 .hero-text > h3 {
     font-weight: 400;
+    opacity: 0.9;
 }
 #hero-sub-text {
     font-size: 0.6em;
@@ -215,7 +207,7 @@ button {
     align-items: center;
     padding-bottom:30px;
     margin-top: 50px;
-    margin-left: 10vw;
+    margin-left: 11vw;
 }
 .header-stylish:before {
     display: inline-block;
@@ -247,15 +239,12 @@ button {
 #about-text {
     grid-row: 2/3;
     grid-column: 1/4;
-    line-height: 2.3em;
-    font-size: 1.3em;
-    margin: 0 10%;
-    display:flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
+    line-height: 2.1em;
+    font-size: 1.5em;
+    margin: 0 11vw;
     opacity: 0.9; 
 }
+
 #about .down-arrow {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -278,19 +267,27 @@ button {
     text-align: center;
     align-items: center;
     margin-bottom:20px;
-    margin-left: 10vw;
+    margin-left: 11vw;
     margin-top: 10px;
 }
 #project-filter-buttons {
-    margin-left: 10vw;
+    margin-left: 11vw;
     margin-top: 30px;
+}
+.filter-button {
+    border: none;
+    color: white;
+    opacity: 0.7;
 }
 .filter-button:focus {
     outline: none;
 }
-.filter-button:hover, .filter-button.selected {
-    color:white;
-    border: 2px solid white;
+.filter-button:hover {
+    border-bottom: 2px solid white;
+}
+.filter-button.selected {
+    border-bottom: 2px solid white;
+    opacity: 1;
 }
 #projects-cards-container {
     display:grid;
@@ -306,19 +303,19 @@ button {
     position: relative;
     width:100%;
     max-width: 700px;
-    background: rgba(56, 23, 54, 0.6);
-    background: rgba(255, 255, 255, 0.06);
-    background:rgb(241, 241, 241, 0.1);
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
+    background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(247,247,247,1) 82%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(247,247,247,1) 82%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(247,247,247,1) 82%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
+
 }
+
 .card-container > img {
     z-index: 1;
     width:100%; 
     max-height:100%;
     position: absolute;
     pointer-events: none;
-    border-radius: 8px;
     /* width:100%;
     height:100%; */
     object-fit: cover;
@@ -330,10 +327,10 @@ button {
      */
     position:relative;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 46%,rgba(0,0,0,0.2) 100%);
+    background: rgba(0,0,0,0.1);
     /* background: inherit; */
     height: 400px;
     z-index: 3;
-    border-radius: 8px;
     box-shadow: -2px 4px 29px 0px rgba(0,0,0,0.36);
     padding: 14px 19px;
 }
@@ -350,7 +347,8 @@ button {
     opacity:0;
     color: #333;
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 10px 20px;
 }
 .card-title.hover, .card > button.hover {
     color: rgb(251, 253, 253);
@@ -471,47 +469,25 @@ button {
     text-align: center;
     align-items: center;
     margin-bottom:20px;
-    margin-left: 10vw;
+    margin-left: 11vw;
     margin-top: 40px;
 }
 #contact-header-text {
     font-size: 1.5em;
-    margin-left: 10vw;
+    margin-left: 11vw;
     opacity: 0.9;
     line-height: 0.7em;
 }
-
-/* #contact-header > h3:after {
-    display: inline-block;
-    margin: 0 0 8px 20px;
-    height: 3px;
-    content: " ";
-    text-shadow: none;
-    background-color: #999;
-    width: 390px;
-}
-
-#contact-header > h3:before {
-    display: inline-block;
-    margin: 0 20px 8px 0;
-    height: 3px;
-    content: " ";
-    text-shadow: none;
-    background-color: #999;
-    width: 390px;
-} */
 
 #contact-form {
     margin-top: 80px;
 }
 #contact-form > form {
-    margin: 0 10vw;
+    margin: 0 11vw;
     min-height: 500px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr;
-    /* background: rgb(143, 163, 161); */
-    /* margin: auto 10vw; */
     border-radius: 6px;
 }
 #contact-form > form > label {
@@ -576,7 +552,6 @@ textarea {
     width: 120px;
     height:50px;
     margin-top: 50px;
-    border-radius: 30px;
     border:2px solid #F6F8FF;
     font-weight: bold;
     font-size: 1.5em;

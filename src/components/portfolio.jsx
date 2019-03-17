@@ -20,8 +20,6 @@ import javaShootemupImg from '../images/JavaShootemup.png';
 import unityMechImg from '../images/mechDemoScreenshot.png';
 import unityAlienImg from '../images/alienGameDemoScreenshot.png';
 import unityNinjaImg from '../images/ninjaGameDemoScreenshot.png';
-
-import placeholderProfile from '../images/placeholder-profile.png';
 import profileImg from '../images/Jag.jpg';
 import downArrow from '../images/172458-128.png';
 
@@ -30,20 +28,11 @@ const projects = {
         <Card
             availability="hosted"
             title="Stock Portfolio Management System"
-            text="Stock portfolio management that supports multiple portfolios and stocks. Stock data is fetched from Alpha Vantage API. Multiple stocks can be graphed simultaneously inside a user specified time window. Portfolios and stocks are stored in localstorage."
+            text="Stock portfolio management system that supports multiple portfolios and stocks. Stock data is fetched from Alpha Vantage API. Multiple stocks can be graphed simultaneously inside a user specified time window. Portfolios and stocks are stored in localstorage."
             tags={["JavaScript", "HTML5", "CSS3", "ReactJS"]}
             image={SPMSImg}
             projectLink="https://viktoroster.github.io/spms-app/"
             codeLink="https://github.com/ViktorOster/spms-app/tree/master"
-        />,
-        <Card
-            availability="hosted"
-            title="Medical Dashboard"
-            text="A patient dashboard for a medical company made with PHP and Laravel. Users can register or login to view their healthcare related data and fill in questionnaires. Data is stored in an SQL database. Use email: mike@mail.com, password: password to login and view data."
-            tags={["PHP", "Laravel", "HTML5", "CSS3", "MySQL"]}
-            image={dashboardImg}
-            projectLink="https://medical-dashboard.herokuapp.com/"
-            codeLink="https://github.com/ViktorOster/csapp"
         />,
         <Card
             availability="hosted"
@@ -65,6 +54,15 @@ const projects = {
         />,
         <Card
             availability="hosted"
+            title="Medical Dashboard"
+            text="A patient dashboard for a medical company made with PHP and Laravel. Users can register or login to view their healthcare related data and fill in questionnaires. Data is stored in an SQL database. Use email: mike@mail.com, password: password to login and view data."
+            tags={["PHP", "Laravel", "HTML5", "CSS3", "MySQL"]}
+            image={dashboardImg}
+            projectLink="https://medical-dashboard.herokuapp.com/"
+            codeLink="https://github.com/ViktorOster/csapp"
+        />,
+        <Card
+            availability="hosted"
             title="Sketchboard / Gallery"
             text="A sketchboard / gallery application using HTML5 canvas that allows users to draw and post drawings to a public gallery. The drawings are stored in JSON-format in a simple NodeJS backend."
             tags={["JavaScript", "HTML5", "CSS3", "NodeJS"]}
@@ -80,15 +78,35 @@ const projects = {
             image={eAuctionImg}
             projectLink="/"
             codeLink="https://github.com/ViktorOster/auction-django"
+        />
+    ],
+    unityGames: [
+        <Card
+            availability="noCode"
+            title="Mech Game (Demo)"
+            text="Mech-type game demo done with Unity. Used Blender for models and textures."
+            tags={["Unity", "C#", "Blender"]}
+            image={unityMechImg}
+            projectLink="https://viktoroster.github.io/mech-demo-build/"
+            codeLink="https://github.com/ViktorOster/java-shootemup"
         />,
         <Card
-            availability="unavailable"
-            title="This Page!"
-            text="This page was built using ReactJS."
-            tags={["JavaScript", "ReactJS", "HTML5", "CSS3"]}
-            image={portfolioImg}
-            projectLink="/"
-            codeLink="https://github.com/ViktorOster/portfolio/tree/master"
+            availability="noCode"
+            title="Third Person Shooter (Demo)"
+            text="Demo of a third person shooter type game with Unity. Used Blender for models and textures."
+            tags={["Unity", "C#", "Blender"]}
+            image={unityAlienImg}
+            projectLink="https://viktoroster.github.io/alien-demo-build/"
+            codeLink="https://github.com/ViktorOster/java-breakout"
+        />,
+        <Card
+            availability="noCode"
+            title="Hack and Slash Game (Demo)"
+            text="Top down hack and slash game made during an introduction to Game Dev Tools course. Contains one playable level."
+            tags={["Unity", "C#"]}
+            image={unityNinjaImg}
+            projectLink="https://viktoroster.github.io/ninja-game-build/"
+            codeLink="https://github.com/ViktorOster/java-shooting-gallery"
         />
     ],
     javaGames: [
@@ -128,35 +146,6 @@ const projects = {
             projectLink="https://drive.google.com/uc?export=download&id=1vFrKALH05hB7ZvS9p-_shLYO0O4YKvTR"
             codeLink="https://github.com/ViktorOster/java-shooting-gallery"
         />
-    ],
-    unityGames: [
-        <Card
-            availability="noCode"
-            title="Mech Game (Demo)"
-            text="Mech-type game demo done with Unity. Used Blender for models and textures."
-            tags={["Unity", "C#", "Blender"]}
-            image={unityMechImg}
-            projectLink="https://viktoroster.github.io/mech-demo-build/"
-            codeLink="https://github.com/ViktorOster/java-shootemup"
-        />,
-        <Card
-            availability="noCode"
-            title="Third Person Shooter (Demo)"
-            text="Demo of a third person shooter type game with Unity, inspired by Ratchet & Clank. Used Blender for models and textures."
-            tags={["Unity", "C#", "Blender"]}
-            image={unityAlienImg}
-            projectLink="https://viktoroster.github.io/alien-demo-build/"
-            codeLink="https://github.com/ViktorOster/java-breakout"
-        />,
-        <Card
-            availability="noCode"
-            title="Hack and Slash Game (Demo)"
-            text="Top down hack and slash game made during an introduction to Game Dev Tools course. Contains one playable level."
-            tags={["Unity", "C#"]}
-            image={unityNinjaImg}
-            projectLink="https://viktoroster.github.io/ninja-game-build/"
-            codeLink="https://github.com/ViktorOster/java-shooting-gallery"
-        />
     ]
 }
 
@@ -189,18 +178,17 @@ class Portfolio extends Component {
             <div id="portfolio">
 
                 <div id="navbar">
-
                     <span id="nav1" >
                         <Link
                             activeClass="active"
-                            to="home"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
                         >
                             <div>
-                                HOME
+                                PROJECTS
                             </div>
                         </Link>
                     </span>
@@ -215,27 +203,12 @@ class Portfolio extends Component {
                             duration={500}
                         >
                             <div>
-                                ABOUT ME
+                                ABOUT
                             </div>
                         </Link>
                     </span>
 
                     <span id="nav3" >
-                        <Link
-                            activeClass="active"
-                            to="projects"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <div>
-                                MY PROJECTS
-                            </div>
-                        </Link>
-                    </span>
-
-                    <span id="nav" >
                         <Link
                             activeClass="active"
                             to="contact"
@@ -245,7 +218,7 @@ class Portfolio extends Component {
                             duration={500}
                         >
                             <div>
-                                CONTACT ME
+                                CONTACT
                             </div>
                         </Link>
                     </span>
@@ -257,7 +230,7 @@ class Portfolio extends Component {
                     <div className="hero-section">
                         <div className="hero-text">
                             <h1>Viktor Österholm</h1>
-                            <h3>Developer, Web developer</h3>
+                            <h3>Web developer</h3>
                             <p id="hero-sub-text" >
                                 I love making things for the web.
                                 <br />
@@ -277,7 +250,7 @@ class Portfolio extends Component {
 
                         <Link
                             activeClass="active"
-                            to="about"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -289,6 +262,39 @@ class Portfolio extends Component {
 
                         </Link>
                     </div>
+                </section>
+
+                <section id="projects">
+                    <div className="sub-header header-stylish">
+                        <h3>My Projects</h3>
+                    </div>
+                    <div id="contact-header-text">
+                        Filter by:
+                    </div>
+                    <div id="project-filter-buttons">
+                        <button className="filter-button" value="all" onClick={this.handleProjectsFilterChange.bind(this)}>All</button>
+                        <button className="filter-button selected" value="webApps" onClick={this.handleProjectsFilterChange.bind(this)}>Web Apps</button>
+                        <button className="filter-button" value="unityGames" onClick={this.handleProjectsFilterChange.bind(this)}>Unity Games</button>
+                        <button className="filter-button" value="javaGames" onClick={this.handleProjectsFilterChange.bind(this)}>Java Games</button>
+                    </div>
+                    <div id="projects-cards-container">
+                        {this.renderProjectsFiltered()}
+
+                    </div>
+
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <div className="down-arrow" id="projects-arrow">
+                            <img src={downArrow} alt="" />
+                        </div>
+
+                    </Link>
 
                 </section>
 
@@ -301,16 +307,17 @@ class Portfolio extends Component {
                         <img src={profileImg} alt="" />
                     </div>
                     <p id="about-text">
-                        I have a passion for development and web development in particular.
-                        I love creating applications in a variety of programming languages.
-                        Apart from programming i also enjoy creating great user experiences and good looking designs – I just love making stuff.
+                        I have a passion for programming and web development in particular.
+                        I love problem solving and turning ideas into reality using code.
+                        <br />
+                        Apart from programming, I enjoy creating great user experiences and functional designs – I just love making stuff.
                         <br />
                         I’m always learning and striving to be the best that I can be.
                     </p>
                     <div className="down-arrow">
                         <Link
                             activeClass="active"
-                            to="projects"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -322,44 +329,6 @@ class Portfolio extends Component {
 
                         </Link>
                     </div>
-
-
-                </section>
-
-
-                <section id="projects">
-                    <div className="sub-header header-stylish">
-                        <h3>My Projects</h3>
-                    </div>
-                    <div id="contact-header-text">
-                        Sort By:
-                    </div>
-                    <div id="project-filter-buttons">
-                        <button className="filter-button" value="all" onClick={this.handleProjectsFilterChange.bind(this)}>All</button>
-                        <button className="filter-button selected" value="webApps" onClick={this.handleProjectsFilterChange.bind(this)}>Web Apps</button>
-                        <button className="filter-button" value="javaGames" onClick={this.handleProjectsFilterChange.bind(this)}>Java Games</button>
-                        <button className="filter-button" value="unityGames" onClick={this.handleProjectsFilterChange.bind(this)}>Unity Games</button>
-                    </div>
-
-                    <div id="projects-cards-container">
-                        {this.renderProjectsFiltered()}
-
-                    </div>
-
-                    <Link
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        <div className="down-arrow" id="projects-arrow">
-                            <img src={downArrow} alt="" />
-                        </div>
-
-                    </Link>
-
                 </section>
 
                 <section id="contact">
