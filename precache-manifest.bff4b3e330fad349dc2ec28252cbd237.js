@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/JavaMinigolf.cdae8fa8.png"
   },
   {
-    "revision": "f693b9abe3079c7dbc26",
+    "revision": "cf63e396aa601bcaa07a",
     "url": "/portfolio/static/css/main.cc4e55f3.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/videoGalleryScreenshot.d3c557a1.png"
   },
   {
-    "revision": "f693b9abe3079c7dbc26",
-    "url": "/portfolio/static/js/main.f693b9ab.chunk.js"
+    "revision": "cf63e396aa601bcaa07a",
+    "url": "/portfolio/static/js/main.cf63e396.chunk.js"
   },
   {
     "revision": "0176fc61a4b6fa0d046ec403bf71592b",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/portfolio-screenshot.51d589c7.jpg"
   },
   {
-    "revision": "e0dc7397b207f9ae243782a8004d9cf8",
+    "revision": "9761056bfc5d692e3a568639d798760a",
     "url": "/portfolio/index.html"
   }
 ];
