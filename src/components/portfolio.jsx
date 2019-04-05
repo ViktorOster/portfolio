@@ -71,12 +71,12 @@ const projects = {
             codeLink="https://github.com/ViktorOster/sketch-gallery"
         />,
         <Card
-            availability="unavailable"
+            availability="hosted"
             title="E-Auction Site"
-            text="An E-Auction site built with Python and Django. Has many functionalities. Not deployed yet, so no live version is available."
+            text="An E-Auction site built with Python and Django. Has many functionalities, like translation, bidding, and updating a user."
             tags={["Python", "Django", "HTML5", "CSS3", "SQLite3"]}
             image={eAuctionImg}
-            projectLink="/"
+            projectLink="http://osterholmv.pythonanywhere.com/"
             codeLink="https://github.com/ViktorOster/auction-django"
         />
     ],
